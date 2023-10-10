@@ -16,15 +16,15 @@
             <div class="row bg-white p-3">
                 <div class="col mb-3">
                     <label for="name" class="form-label text-danger">Nome Cognome</label>
-                    <input type="text" id="name" class="form-control">
+                    <input type="text" id="name" value="" name="nome" class="form-control">
                 </div>
                 <div class="col mb-3">
                     <label for="km" class="form-label text-danger">Km da percorrere</label>
-                    <input type="text" id="km" class="form-control">
+                    <input type="text" id="km" value="km" name="distanza" class="form-control">
                 </div>
                 <div class=" col-auto mb-3">
                     <label for="età" class="form-label d-block text-danger">Fascia d'età</label>
-                    <select name="età" id="età">
+                    <select name="età" id="età" value="età" name="fascia d'età">
                         <option value="">Seleziona</option>
                         <option value="minorenne">Minorenne</option>
                         <option value="maggiorenne">Maggiorenne</option>
@@ -41,7 +41,7 @@
             </div>
             <h2 class="text-white text-center mt-5">IL TUO BIGLIETTO</h2>
             <div class="row mt-3">
-                <div class="col-auto"></div>
+                <div class="col-auto" id="ticket"></div>
                 <div class="col-auto"></div>
                 <div class="col-auto"></div>
                 <div class="col-auto"></div>
