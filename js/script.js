@@ -23,9 +23,9 @@ button.addEventListener('click', function(){
         // console.log(minorenne);
         // console.log(maggiorenne);
 
-        const ticket = document.querySelector('p');
-        // ticket.innerHTML = nome + '' + distanza + '' + età;
-            ticket.innerHTML = ` ${nome} ${distanza} ${età}`;
+        const ticket = document.querySelector('#ticket');
+        ticket.innerHTML = ` ${nome} ${distanza} ${età}`;
+        ticket.classList.remove('d-none');
         console.log(ticket);
       }
 });
