@@ -7,3 +7,14 @@
 // - va applicato uno sconto del 20% per i minorenni
 // - va applicato uno sconto del 40% per gli over 65.
 
+const button = document.querySelector('#btnStart');
+console.log(button)
+
+button.addEventListener('click', function(){
+    let nome = document.getElementById('nome').value;
+    let distanza = document.getElementById('km').value;
+    let età = document.getElementById('età')
+    console.log(nome);
+    console.log(distanza);
+    console.log(età);
+})
