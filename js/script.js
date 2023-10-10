@@ -13,8 +13,17 @@ console.log(button)
 button.addEventListener('click', function(){
     let nome = document.getElementById('nome').value;
     let distanza = document.getElementById('km').value;
-    let età = document.getElementById('età')
-    console.log(nome);
-    console.log(distanza);
-    console.log(età);
-})
+    let età = document.getElementById('età');
+
+    if (nome === '' || distanza === ''){
+        alert('Inserisci i tuoi dati')
+    } else{
+        console.log(nome);
+        console.log(distanza);
+        console.log(età);
+        
+        const ticket = document.querySelector('p');
+        console.log(ticket)
+      }
+});
+
