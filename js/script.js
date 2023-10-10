@@ -18,12 +18,16 @@ button.addEventListener('click', function(){
     if (nome === '' || distanza === ''){
         alert('Inserisci i tuoi dati')
     } else{
-        console.log(nome);
-        console.log(distanza);
-        console.log(età);
-        
+        // console.log(nome);
+        // console.log(distanza);
+        // console.log(minorenne);
+        // console.log(maggiorenne);
+
         const ticket = document.querySelector('p');
-        console.log(ticket)
+        // ticket.innerHTML = nome + '' + distanza + '' + età;
+            ticket.innerHTML = ` ${nome} ${distanza} ${età}`;
+        console.log(ticket);
       }
 });
+
 
