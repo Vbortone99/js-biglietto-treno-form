@@ -8,7 +8,45 @@
     <title>Train form</title>
 </head>
 <body>
-
+<main>
+    <div class="container bg-secondary">
+        <section id="ticket-plan">
+            <h1 class="display-3 m-4 pt-4 text-center">Compra il tuo biglietto</h1>
+            <div class="m-auto w-75">
+                <div class="mb-3">
+                    <label for="name">Il tuo nome e cognome</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="km">Km da percorrere</label>
+                    <input type="text" class="form-control" name="km" id="km">
+                </div>
+                <div class="mb-3">
+                    <label for="age">Seleziona la tua fascia d'età</label>
+                    <select name="age" id="age" class="form-control">
+                        <option value=""></option>
+                        <option value="under18">Under 18</option>
+                        <option value="over65">Over 65</option>
+                        <option value="adult">Adult</option>
+                    </select>
+                </div>
+                <div class="mb-4 d-flex justify-content-center gap-3 pb-4">
+                    <button class="btn btn-success">Genera</button>
+                    <button class="btn btn-danger">Annulla</button>
+                </div>
+                <div class="alert alert-danger d-none"></div>
+                <div class="container-fluid d-none" id="ticket">
+                    <h3>Il tuo biglietto</h3>
+                    <div class="row">
+                        <div class="col bg-black">1</div>
+                        <div class="col">2</div>
+                        <div class="col">3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
     <script src="js/script.js"></script>
 </body>
 </html>
