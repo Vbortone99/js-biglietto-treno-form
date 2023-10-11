@@ -1,12 +1,18 @@
-// Descrizione:
-// Scrivere un programma che chieda all’utente:
-// - Il numero di chilometri da percorrere
-// - Età del passeggero
-// Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
-// - il prezzo del biglietto è definito in base ai km (0.21 € al km)
-// - va applicato uno sconto del 20% per i minorenni
-// - va applicato uno sconto del 40% per gli over 65.
+const button = document.querySelector('#generate-btn');
+const reverseButton = document.querySelector('#reverse-btn');
+const ticketEl = document.getElementById('ticket');
+const errorEl = document.querySelector('#alert');
+const ticketRowEl = ticketEl.querySelector('.row');
+const discount18 = 20;
+const discount65 = 40;
+const kmPrice = 0.21;
 
-
+reverseButton.addEventListener('click', function(){
+    document.getElementById('name').value = '';
+    document.getElementById('km').value = '';
+    document.getElementById('age').value = '';
+    errorEl.classList.add('d-none');
+    ticketEl.classList.add('d-none');
+});
 
 
